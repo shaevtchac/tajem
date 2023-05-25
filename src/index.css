@@ -1,0 +1,147 @@
+/* @import 'npm:@splidejs/splide/dist/css/splide.min.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'ADELIA';
+  src: url('../public/fonts/ADELIA.otf');
+} */
+
+/* __________________________________________________________________________ menu ___________________________________________________________ */
+nav.is-open {
+  max-height: 500px !important;
+  transition: max-height 0.25s ease-in;
+  @apply bg-menubg;
+}
+
+nav.reduced {
+  max-height: 50px;
+  min-height: 50px;
+  transition: all 0.25s ease-in;
+  @apply bg-menubg;
+}
+nav.reduced .hamburger {
+  top: 0px;
+}
+nav.reduced li {
+  line-height: 50px;
+}
+
+.hamburger {
+  @apply m-0 inline-block cursor-pointer overflow-visible border-0 bg-transparent
+  text-inherit duration-150 ease-linear;
+  padding: 15px 15px;
+  transition-property: opacity, filter;
+  font: inherit;
+  text-transform: none;
+}
+.hamburger:hover {
+  @apply opacity-70;
+}
+.hamburger.is-active:hover {
+  @apply opacity-70;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  @apply bg-black;
+}
+
+.hamburger-box {
+  @apply relative inline-block h-6 w-10;
+}
+
+.hamburger-inner {
+  @apply top-1/2 block;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  @apply absolute h-1 w-10 rounded bg-black 
+  transition-transform duration-150;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/*
+   * Slider
+   */
+.hamburger--slider .hamburger-inner {
+  top: 2px;
+}
+.hamburger--slider .hamburger-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+.hamburger--slider .hamburger-inner::after {
+  top: 20px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--slider.is-active .hamburger-inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+/* _____________________________________________________ animations ________________________________________________ */
+
+@keyframes fade-from-left {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-right {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-bottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}

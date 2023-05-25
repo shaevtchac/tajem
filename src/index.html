@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="splide.min.css" />
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <nav
+      class="fixed z-30 flex max-h-[95px] min-h-[95px] w-full justify-center [transition:max-height,min-height_150ms_ease-out]"
+    >
+      <div
+        class="flex w-full max-w-7xl items-center justify-between gap-4 px-2 sm:px-7"
+      >
+        <button
+          id="menu-toggle"
+          class="hamburger hamburger--slider absolute right-2 top-5 md:hidden"
+          type="button"
+          aria-controls="menu-items"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <ul
+          id="menu-items"
+          class="my-4 mr-20 hidden flex-1 gap-4 text-center text-[1.5em] md:my-0 md:mr-0 md:flex md:h-full md:flex-none md:items-center md:text-[1em]"
+        >
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#top">HOME</a>
+          </li>
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#services">SERVICES</a>
+          </li>
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#about">ABOUT</a>
+          </li>
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#pricing">PRICING</a>
+          </li>
+          <li
+            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
+          >
+            <a href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
