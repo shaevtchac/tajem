@@ -1,6 +1,6 @@
 import { Splide } from '@splidejs/splide';
 
-const splide = new Splide('.splide', { pagination: false });
+const splide = new Splide('.splide', { arrows: false });
 splide.mount();
 
 // _______________________________________________________________ menu _______________________________________________________________

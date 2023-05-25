@@ -15,13 +15,19 @@
     <link rel="stylesheet" href="splide.min.css" />
     <script src="index.js" type="module"></script>
   </head>
-  <body>
+  <body
+    class="mx-auto max-w-[1600px] bg-white font-roboto font-[300] text-tlight"
+  >
     <nav
       class="fixed z-30 flex max-h-[95px] min-h-[95px] w-full justify-center [transition:max-height,min-height_150ms_ease-out]"
     >
       <div
-        class="flex w-full max-w-7xl items-center justify-between gap-4 px-2 sm:px-7"
+        class="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-2 sm:px-7"
       >
+        <div class="flex items-center gap-4">
+          <img src="img/logo.png" alt="logo tajam" />
+          <p class="text-[1.5em] font-thin text-primary">tajam</p>
+        </div>
         <button
           id="menu-toggle"
           class="hamburger hamburger--slider absolute right-2 top-5 md:hidden"
@@ -36,50 +42,262 @@
         </button>
         <ul
           id="menu-items"
-          class="my-4 mr-20 hidden flex-1 gap-4 text-center text-[1.5em] md:my-0 md:mr-0 md:flex md:h-full md:flex-none md:items-center md:text-[1em]"
+          class="my-4 mr-20 hidden flex-1 gap-4 text-center font-black text-white md:my-0 md:mr-0 md:flex md:h-full md:flex-none md:items-center"
         >
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
             <a href="#top">HOME</a>
           </li>
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
-            <a href="#services">SERVICES</a>
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
+            <a href="#services">ABOUT</a>
           </li>
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
-            <a href="#portfolio">PORTFOLIO</a>
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
+            <a href="#portfolio">EXPERTISE</a>
           </li>
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
-            <a href="#about">ABOUT</a>
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
+            <a href="#about">TEAMS</a>
           </li>
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
-            <a href="#pricing">PRICING</a>
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
+            <a href="#pricing">WORKS</a>
           </li>
-          <li
-            class="md:h-full md:leading-[95px] md:hover:[box-shadow:0_2px_0_#00c7fc]"
-          >
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
+            <a href="#contact">PEOPLE SAY</a>
+          </li>
+          <li class="hover:text-primary md:h-full md:leading-[95px]">
             <a href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- ________________________________________________________ slider ________________________________________________________ -->
+
     <section class="splide" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide">Slide 01</li>
-          <li class="splide__slide">Slide 02</li>
-          <li class="splide__slide">Slide 03</li>
+          <li
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+          >
+            <h1 class="font-playfair text-[2em] font-black">
+              We Are Awesome Creative Agency
+            </h1>
+            <hr class="hr-primary" />
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ipsam id ut expedita necessitatibus. Laboriosam ea voluptatem
+              minus dolorum nesciunt optio saepe tempore, magnam iusto veritatis
+              adipisci obcaecati blanditiis voluptate.
+            </p>
+            <button class="btn-primary">LEARN MORE</button>
+          </li>
+          <li
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+          >
+            <h1 class="font-playfair text-[2em] font-black">slide 2</h1>
+            <hr class="hr-primary" />
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ipsam id ut expedita necessitatibus. Laboriosam ea voluptatem
+              minus dolorum nesciunt optio saepe tempore, magnam iusto veritatis
+              adipisci obcaecati blanditiis voluptate.
+            </p>
+            <button class="btn-primary">LEARN MORE</button>
+          </li>
+          <li
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+          >
+            <h1 class="font-playfair text-[2em] font-black">slide 3</h1>
+            <hr class="hr-primary" />
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ipsam id ut expedita necessitatibus. Laboriosam ea voluptatem
+              minus dolorum nesciunt optio saepe tempore, magnam iusto veritatis
+              adipisci obcaecati blanditiis voluptate.
+            </p>
+            <button class="btn-primary">LEARN MORE</button>
+          </li>
         </ul>
       </div>
+    </section>
+
+    <!-- ________________________________________________________ story ________________________________________________________ -->
+
+    <section class="flex max-w-7xl px-[5%] py-20">
+      <div class="grid w-5/12 place-items-center">
+        <img src="img/logo-fill-big.png" alt="logo tajam in color" />
+      </div>
+      <div class="w-7/12 space-y-3">
+        <h2>OUR STORY</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis
+          error facere perspiciatis exercitationem dolore iure voluptatum,
+          laborum, nemo aperiam odio repellat! Doloribus cum quia qui iste
+          facilis tenetur non.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          perferendis ad quia quaerat vel obcaecati consequatur facere enim
+          atque. Distinctio illo dicta voluptate porro quo itaque officia
+          laboriosam iusto provident.
+        </p>
+        <button class="btn-primary">LEARN MORE</button>
+      </div>
+    </section>
+
+    <!-- ________________________________________________________ VIDEO ________________________________________________________ -->
+
+    <section
+      class="flex aspect-[1600/550] flex-col items-center justify-center gap-2 bg-[url(img/2movie.png)] bg-cover bg-center bg-no-repeat md:gap-6"
+    >
+      <img src="img/icons/2-play.png" alt="play icon" class="max-w-[15vw]" />
+      <p class="text-center font-black text-white">WATCH OUR STORY</p>
+    </section>
+
+    <!-- ________________________________________________________ EXPERTISE ________________________________________________________ -->
+
+    <section class="mx-auto max-w-7xl px-[5%] py-20 text-center">
+      <h2 class="mb-4">EXPERTISE</h2>
+      <p class="mx-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab
+        dolorem ullam dolor debitis!
+      </p>
+      <hr class="hr-secondary mb-8" />
+      <div class="grid gap-6">
+        <div class="grid place-items-center gap-4">
+          <img src="img/icons/desktop.png" alt="desktop monitor icon" />
+          <h3 class="font-bold">WEB DESIGN & DEVELOPMENT</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+        <div class="grid place-items-center gap-4 text-center">
+          <img src="img/icons/3-2brush.png" alt="paint brush icon" />
+          <h3 class="font-bold">BRANDING IDENTITY</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+        <div class="grid place-items-center gap-4 text-center">
+          <img src="img/icons/3-3phone.png" alt="PHONE ICON" />
+          <h3 class="font-bold">MOBILE APP</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+        <div class="grid place-items-center gap-4 text-center">
+          <img src="img/icons/3-4chart.png" alt="chart icon" />
+          <h3 class="font-bold">SEARCH ENGINE OPTIMIZATION</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+        <div class="grid place-items-center gap-4 text-center">
+          <img src="img/icons/3-5game.png" alt="gaming console icon" />
+          <h3 class="font-bold">GAME DEVELOPMENT</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+        <div class="grid place-items-center gap-4 text-center">
+          <img src="img/icons/3-6heart.png" alt="heart icon" />
+          <h3 class="font-bold">MADE WITH LOVE</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            quasi libero asperiores nobis?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ________________________________________________________ team ________________________________________________________ -->
+
+    <section
+      class="grid place-items-center bg-[url(img/4forest.png)] bg-cover bg-center bg-no-repeat px-[5%] py-10 text-center text-white"
+    >
+      <h2 class="text-white">MEET OUR AMAZING TEAM</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+        ducimus repellendus cupiditate rerum!
+      </p>
+      <hr class="hr-secondary clear-left mb-8 border-white" />
+      <!-- people container -->
+      <div class="flex flex-wrap justify-center gap-6">
+        <div
+          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
+        >
+          <img
+            src="img/workers/arrul-lin-sYhUhse5uT8-unsplash.jpg"
+            alt="Arrul Lin"
+            class="aspect-square w-full object-cover object-center"
+          />
+          <p class="mt-2 font-[700]">SEMF UCUK</p>
+          <p>CEO & FOUNDER</p>
+        </div>
+        <div
+          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
+        >
+          <img
+            src="img/workers/ashwini-chaudhary-monty-eq6EJSdpHUQ-unsplash.jpg"
+            alt="Ashwini Chaudhary"
+            class="aspect-square w-full object-cover object-center"
+          />
+          <p class="mt-2 font-[700]">DIK ADALIN</p>
+          <p>ENGINEERING</p>
+        </div>
+        <div
+          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
+        >
+          <img
+            src="img/workers/farhan-shaikh-9TYryqt3wLk-unsplash.jpg"
+            alt="Arrul Lin"
+            class="aspect-square w-full object-cover object-center"
+          />
+          <p class="mt-2 font-[700]">JENG KOL</p>
+          <p>DESIGNER</p>
+        </div>
+        <div
+          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
+        >
+          <img
+            src="img/workers/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg"
+            alt="Arrul Lin"
+            class="aspect-square w-full object-cover object-center"
+          />
+          <p class="mt-2 font-[700]">PET ROMAK</p>
+          <p>MARKETING</p>
+        </div>
+      </div>
+      <p class="mx-auto mb-4 mt-8">Become part of our team, let's join us!</p>
+      <button class="btn-primary">WE ARE HIRING</button>
+    </section>
+
+    <!-- ________________________________________________________ works ________________________________________________________ -->
+
+    <section>
+      <div class="mx-auto flex max-w-7xl justify-between px-[5%] py-14 xl:px-0">
+        <h2>OUR WORKS</h2>
+        <p><a href="#">See all our projects in dribble ></a></p>
+      </div>
+      <!-- image container -->
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+      </div>
+      <button class="btn-primary mx-auto my-6 block">LOAD MORE</button>
     </section>
   </body>
 </html>

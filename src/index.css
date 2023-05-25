@@ -8,9 +8,25 @@
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   }
+  p {
+    @apply max-w-prose;
+  }
+  h2 {
+    @apply font-playfair text-[1.2em] font-bold leading-tight text-tdark;
+  }
 }
 
 @layer components {
+  .hr-primary {
+    @apply mx-auto my-5 w-16 border border-primary;
+  }
+  .hr-secondary {
+    @apply mx-auto my-5 w-16 border border-tlight;
+  }
+
+  .btn-primary {
+    @apply border border-primary bg-transparent p-3 font-black uppercase text-primary;
+  }
 }
 
 @layer utilities {
