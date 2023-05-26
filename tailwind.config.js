@@ -10,20 +10,23 @@ module.exports = {
       xl: '1280px',
     },
 
-    fontFamily: {
-      playfair: ['Playfair Display', 'serif'],
-      roboto: ['Roboto', 'serif'],
-    },
     extend: {
       colors: {
         primary: '#00e0d0',
         tdark: '#413d4b',
         tlight: '#333333',
+        whitetr: '#ffffff88',
         menubg: '#00000088',
+      },
+      fontFamily: {
+        playfair: ['Playfair Display', 'serif'],
+        roboto: ['Roboto', 'serif'],
       },
     },
   },
 
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };
-

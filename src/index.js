@@ -1,8 +1,32 @@
 import { Splide } from '@splidejs/splide';
 
-const splide = new Splide('.splide', { arrows: false });
+const splide = new Splide('.splide', {
+  arrows: false,
+});
 splide.mount();
 
+const splideTestimonials = new Splide('#carousel-testimonials', {
+  type: 'fade',
+  rewind: true,
+  pagination: false,
+  arrows: false,
+});
+
+const splideTestimonialsThumbs = new Splide('#carousel-testimonials-thumbs', {
+  fixedWidth: 50,
+  fixedHeight: 50,
+  rewind: true,
+  pagination: false,
+  isNavigation: true,
+  focus: 'center',
+  arrowPath:
+    'M 10.24901,1.4752837 C 9.9149159,1.139629 9.9133547,0.59243365 10.245887,0.25443712 10.57842,-0.0835594 11.120151,-0.08512059 11.454244,0.25131475 L 30.588126,19.388319 c 0.334094,0.335655 0.335655,0.88285 0.0031,1.220847 L 11.454244,39.749292 a 0.84881622,0.84881622 0 0 1 -1.208357,-0.0039 c -0.3325323,-0.337996 -0.3309711,-0.884411 0.0031,-1.220066 L 28.770907,20.000304 Z',
+});
+
+splideTestimonials.sync(splideTestimonialsThumbs);
+splideTestimonials.mount();
+splideTestimonialsThumbs.mount();
+splideTestimonialsThumbs.go(2);
 // _______________________________________________________________ menu _______________________________________________________________
 
 // _________ button

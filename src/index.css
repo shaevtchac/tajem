@@ -1,4 +1,6 @@
-/* @import 'npm:@splidejs/splide/dist/css/splide.min.css'; */
+@import url(preflight.css);
+@import 'npm:@splidejs/splide/dist/css/splide.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +28,14 @@
 
   .btn-primary {
     @apply border border-primary bg-transparent p-3 font-black uppercase text-primary;
+  }
+
+  .testimonial-body {
+    @apply relative mx-auto mt-10 font-playfair;
+  }
+  .testimonial-body::before {
+    content: '“';
+    @apply absolute -top-14  left-1/2 -translate-x-1/2  text-8xl text-neutral-400;
   }
 }
 
@@ -105,10 +115,7 @@ nav.reduced li {
 .hamburger-inner::after {
   bottom: -10px;
 }
-
-/*
-   * Slider
-   */
+/* ___________________________________________ transformation ______________________________ */
 .hamburger--slider .hamburger-inner {
   top: 2px;
 }
@@ -131,6 +138,26 @@ nav.reduced li {
 }
 .hamburger--slider.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+/* _______________________________________________________ splide ________________________________________________ */
+#carousel-testimonials-thumbs li.is-active {
+  border-color: transparent;
+}
+
+#carousel-testimonials-thumbs li.is-active div {
+  width: 100%;
+}
+
+#carousel-testimonials-thumbs .splide__arrow {
+  background-color: transparent;
+}
+#carousel-testimonials-thumbs .splide__arrow svg {
+  fill: white;
+}
+
+.thumb-img-container {
+  @apply aspect-square w-3/4 overflow-hidden rounded-full transition-all;
 }
 
 /* _____________________________________________________ animations ________________________________________________ */
