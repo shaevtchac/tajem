@@ -124,6 +124,7 @@
     <section class="max-w-7xl gap-4 px-[5%] py-20 md:flex">
       <div
         class="float-left mr-4 grid w-1/3 place-items-center md:float-none md:mr-0 md:w-5/12"
+        data-animation="fade-from-left"
       >
         <img
           src="img/logo-fill-big.png?as=webp"
@@ -135,8 +136,8 @@
           alt="logo tajam in color"
         />
       </div>
-      <div class="space-y-3 md:w-7/12">
-        <h2>OUR STORY</h2>
+      <div class="space-y-3 md:w-7/12" data-animation="fade-from-right">
+        <h2 data-animation="fade-in" data-duration="1s">OUR STORY</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis
           error facere perspiciatis exercitationem dolore iure voluptatum,
@@ -158,21 +159,37 @@
     <section
       class="flex aspect-[1600/550] flex-col items-center justify-center gap-2 bg-[url(img/2movie.png?as=webp&width=530)] bg-cover bg-center bg-no-repeat sm:bg-[url(img/2movie.png?as=webp&width=700)] md:gap-6 md:bg-[url(img/2movie.png?as=webp&width=900)] lg:bg-[url(img/2movie.png?as=webp&width=1280)] xl:bg-[url(img/2movie.png?as=webp&width=1600)]"
     >
-      <img src="img/icons/2-play.png" alt="play icon" class="max-w-[15vw]" />
+      <img
+        src="img/icons/2-play.png"
+        alt="play icon"
+        class="max-w-[15vw]"
+        data-animation="fade-in"
+        data-duration="1s"
+      />
       <p class="text-center font-black text-white">WATCH OUR STORY</p>
     </section>
 
     <!-- ________________________________________________________ EXPERTISE ________________________________________________________ -->
 
     <section class="mx-auto max-w-7xl px-[5%] py-20 text-center">
-      <h2 class="mb-4">EXPERTISE</h2>
-      <p class="mx-auto">
+      <h2 class="mb-4" data-animation="fade-in" data-duration="1s">
+        EXPERTISE
+      </h2>
+      <p
+        class="mx-auto"
+        data-animation="fade-in"
+        data-duration="1s"
+        data-delay="500ms"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab
         dolorem ullam dolor debitis!
       </p>
       <hr class="hr-secondary mb-8" />
       <div class="grid gap-6 md:grid-cols-2">
-        <div class="grid place-items-center gap-4">
+        <div
+          class="grid place-items-center gap-4"
+          data-animation="fade-from-left"
+        >
           <img src="img/icons/desktop.png?as=webp" alt="desktop monitor icon" />
           <h3 class="font-bold">WEB DESIGN & DEVELOPMENT</h3>
           <p>
@@ -180,7 +197,10 @@
             quasi libero asperiores nobis?
           </p>
         </div>
-        <div class="grid place-items-center gap-4 text-center">
+        <div
+          class="grid place-items-center gap-4 text-center"
+          data-animation="fade-from-right"
+        >
           <img src="img/icons/3-2brush.png?as=webp" alt="paint brush icon" />
           <h3 class="font-bold">BRANDING IDENTITY</h3>
           <p>
@@ -188,7 +208,10 @@
             quasi libero asperiores nobis?
           </p>
         </div>
-        <div class="grid place-items-center gap-4 text-center">
+        <div
+          class="grid place-items-center gap-4 text-center"
+          data-animation="fade-from-left"
+        >
           <img src="img/icons/3-3phone.png?as=webp" alt="PHONE ICON" />
           <h3 class="font-bold">MOBILE APP</h3>
           <p>
@@ -196,7 +219,10 @@
             quasi libero asperiores nobis?
           </p>
         </div>
-        <div class="grid place-items-center gap-4 text-center">
+        <div
+          class="grid place-items-center gap-4 text-center"
+          data-animation="fade-from-right"
+        >
           <img src="img/icons/3-4chart.png?as=webp" alt="chart icon" />
           <h3 class="font-bold">SEARCH ENGINE OPTIMIZATION</h3>
           <p>
@@ -204,7 +230,10 @@
             quasi libero asperiores nobis?
           </p>
         </div>
-        <div class="grid place-items-center gap-4 text-center">
+        <div
+          class="grid place-items-center gap-4 text-center"
+          data-animation="fade-from-left"
+        >
           <img src="img/icons/3-5game.png?as=webp" alt="gaming console icon" />
           <h3 class="font-bold">GAME DEVELOPMENT</h3>
           <p>
@@ -212,7 +241,10 @@
             quasi libero asperiores nobis?
           </p>
         </div>
-        <div class="grid place-items-center gap-4 text-center">
+        <div
+          class="grid place-items-center gap-4 text-center"
+          data-animation="fade-from-right"
+        >
           <img src="img/icons/3-6heart.png?as=webp" alt="heart icon" />
           <h3 class="font-bold">MADE WITH LOVE</h3>
           <p>
@@ -228,15 +260,20 @@
     <section
       class="grid place-items-center bg-[url(img/4forest.png?as=webp)] bg-cover bg-center bg-no-repeat px-[5%] py-10 text-center text-white"
     >
-      <h2 class="text-white">MEET OUR AMAZING TEAM</h2>
-      <p>
+      <h2 class="text-white" data-animation="fade-in" data-duration="1s">
+        MEET OUR AMAZING TEAM
+      </h2>
+      <p data-animation="fade-in" data-duration="1s" data-delay="500ms">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
         ducimus repellendus cupiditate rerum!
       </p>
       <hr class="hr-secondary clear-left mb-8 border-white" />
       <!-- people container -->
       <div class="flex flex-wrap justify-center gap-6">
-        <div class="grid w-56 gap-2 border border-white">
+        <div
+          class="grid w-56 gap-2 border border-white"
+          data-animation="fade-from-left"
+        >
           <img
             src="img/workers/arrul-lin-sYhUhse5uT8-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
@@ -245,7 +282,10 @@
           <p class="mt-2 font-[700]">SEMF UCUK</p>
           <p>CEO & FOUNDER</p>
         </div>
-        <div class="grid w-56 gap-2 border border-white">
+        <div
+          class="grid w-56 gap-2 border border-white"
+          data-animation="fade-from-right"
+        >
           <img
             src="img/workers/ashwini-chaudhary-monty-eq6EJSdpHUQ-unsplash.jpg?as=webp&width=224"
             alt="Ashwini Chaudhary"
@@ -254,7 +294,10 @@
           <p class="mt-2 font-[700]">DIK ADALIN</p>
           <p>ENGINEERING</p>
         </div>
-        <div class="grid w-56 gap-2 border border-white">
+        <div
+          class="grid w-56 gap-2 border border-white"
+          data-animation="fade-from-left"
+        >
           <img
             src="img/workers/farhan-shaikh-9TYryqt3wLk-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
@@ -263,7 +306,10 @@
           <p class="mt-2 font-[700]">JENG KOL</p>
           <p>DESIGNER</p>
         </div>
-        <div class="grid w-56 gap-2 border border-white">
+        <div
+          class="grid w-56 gap-2 border border-white"
+          data-animation="fade-from-right"
+        >
           <img
             src="img/workers/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
@@ -323,7 +369,12 @@
       aria-label="What our clients say about us"
       class="bg-[url(img/5forest.png?as=webp&width=530&height=700)] bg-cover bg-center bg-no-repeat py-20 text-center text-white sm:bg-[url(img/5forest.png?as=webp&width=700&height=600)] md:bg-[url(img/5forest.png?as=webp&width=900)] lg:bg-[url(img/5forest.png?as=webp&width=1280)] xl:bg-[url(img/5forest.png?as=webp&width=1600)]"
     >
-      <div id="carousel-testimonials" class="splide mx-[5%]">
+      <div
+        id="carousel-testimonials"
+        class="splide mx-[5%]"
+        data-animation="fade-in"
+        data-duration="1s"
+      >
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -404,6 +455,9 @@
         id="carousel-testimonials-thumbs"
         aria-label="thumbnails for testimonials carousel"
         class="splide mx-auto w-[270px] xs:w-[330px]"
+        data-animation="fade-in"
+        data-duration="1s"
+        data-delay="500ms"
       >
         <div class="splide__track">
           <ul class="splide__list">
@@ -460,7 +514,7 @@
     <!-- ________________________________________________________ CONTACT ________________________________________________________ -->
 
     <section class="mx-auto grid max-w-7xl gap-10 p-[5%] md:grid-cols-2">
-      <form action="#" class="grid gap-4">
+      <form action="#" class="grid gap-4" data-animation="fade-from-left">
         <h2 class="my-6">GIVE US A GOOD NEWS</h2>
         <input
           class="border border-tlight p-2"
@@ -495,7 +549,7 @@
           SUBMIT
         </button>
       </form>
-      <div>
+      <div data-animation="fade-from-right">
         <h2 class="mb-11 mt-6">OUR HAPPY CLIENT</h2>
         <div
           class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] items-center gap-x-4 gap-y-8"
@@ -520,7 +574,7 @@
       class="bg-[url(img/6footer.png?as=webp&width=530&height=488)] bg-cover bg-center bg-no-repeat px-[5%] py-16 text-sm text-white sm:bg-[url(img/6footer.png?as=webp&width=700&height=488)] md:bg-[url(img/6footer.png?as=webp&width=900&height=356)] lg:bg-[url(img/6footer.png?as=webp&width=1280&height=382)] xl:bg-[url(img/6footer.png?as=webp&width=1600)]"
     >
       <div class="flex flex-wrap justify-between gap-4">
-        <div>
+        <div data-animation="fade-from-left">
           <div class="flex items-center gap-4">
             <img src="img/logo.png?as=webp" alt="logo tajam" />
             <p class="text-[1.5em] font-thin text-primary">tajam</p>
@@ -530,7 +584,7 @@
             veniam quasi recusandae!
           </p>
         </div>
-        <div>
+        <div data-animation="fade-in" data-duration="1s">
           <p class="mb-2 font-bold">OUR STUDIO</p>
           <div class="grid grid-cols-[20px_1fr] gap-2">
             <svg
@@ -561,7 +615,7 @@
             <p><a href="tel:+622122243333"> (+62) 21-2224-3333</a></p>
           </div>
         </div>
-        <div>
+        <div data-animation="fade-from-right">
           <p class="mb-2 font-bold">STAY IN TOUCH</p>
           <div class="flex flex-wrap gap-4">
             <input

@@ -45,13 +45,6 @@
 @layer utilities {
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-@font-face {
-  font-family: 'ADELIA';
-  src: url('../public/fonts/ADELIA.otf');
-} */
-
 /* __________________________________________________________________________ menu ___________________________________________________________ */
 .logo {
   @apply flex items-center gap-4;
@@ -72,6 +65,7 @@ nav.is-open ul {
 nav.is-open li {
   font-size: 1.5em !important;
   font-weight: 300 !important;
+  line-height: 50px;
 }
 
 nav.reduced {
@@ -79,6 +73,9 @@ nav.reduced {
   min-height: 50px;
   transition: all 0.25s ease-in;
   @apply bg-menubg;
+}
+nav.reduced li {
+  line-height: 50px;
 }
 nav.reduced .hamburger {
   top: 0px;
@@ -176,7 +173,7 @@ nav.reduced .hamburger {
 }
 
 .works-image {
-  @apply grid aspect-video place-items-center rounded-sm border border-black bg-slate-400 text-8xl font-black text-slate-500;
+  @apply grid aspect-video cursor-pointer place-items-center rounded-sm border border-black bg-slate-400 text-8xl font-black text-slate-500;
 }
 
 /* _____________________________________________________ animations ________________________________________________ */
