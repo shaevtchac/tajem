@@ -25,7 +25,7 @@
         class="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-2 sm:px-7"
       >
         <div class="logo">
-          <img src="img/logo.png" alt="logo tajam" />
+          <img src="img/logo.png?as=webp" alt="logo tajam" />
           <p class="text-[1.5em] font-thin text-primary">tajam</p>
         </div>
         <button
@@ -75,7 +75,7 @@
       <div class="splide__track">
         <ul class="splide__list">
           <li
-            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png?as=webp&width=530&height=800)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white sm:bg-[url(img/1hero.png?as=webp&width=700&height=800)] md:bg-[url(img/1hero.png?as=webp&width=900&height=800)] lg:h-[670px] lg:bg-[url(img/1hero.png?as=webp&width=1280&height=670)] xl:bg-[url(img/1hero.png?as=webp&width=1600&height=670)]"
           >
             <h1 class="font-playfair text-[2em] font-black">
               We Are Awesome Creative Agency
@@ -90,7 +90,7 @@
             <button class="btn-primary">LEARN MORE</button>
           </li>
           <li
-            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png?as=webp&width=530&height=800)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white sm:bg-[url(img/1hero.png?as=webp&width=700&height=800)] md:bg-[url(img/1hero.png?as=webp&width=900&height=800)] lg:h-[670px] lg:bg-[url(img/1hero.png?as=webp&width=1280&height=670)] xl:bg-[url(img/1hero.png?as=webp&width=1600&height=670)]"
           >
             <h1 class="font-playfair text-[2em] font-black">slide 2</h1>
             <hr class="hr-primary" />
@@ -103,7 +103,7 @@
             <button class="btn-primary">LEARN MORE</button>
           </li>
           <li
-            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white lg:h-[670px]"
+            class="splide__slide grid h-screen w-full auto-rows-min content-center justify-items-center bg-[url(img/1hero.png?as=webp&width=530&height=800)] bg-cover bg-center bg-no-repeat px-[5%] text-center text-white sm:bg-[url(img/1hero.png?as=webp&width=700&height=800)] md:bg-[url(img/1hero.png?as=webp&width=900&height=800)] lg:h-[670px] lg:bg-[url(img/1hero.png?as=webp&width=1280&height=670)] xl:bg-[url(img/1hero.png?as=webp&width=1600&height=670)]"
           >
             <h1 class="font-playfair text-[2em] font-black">slide 3</h1>
             <hr class="hr-primary" />
@@ -125,7 +125,15 @@
       <div
         class="float-left mr-4 grid w-1/3 place-items-center md:float-none md:mr-0 md:w-5/12"
       >
-        <img src="img/logo-fill-big.png" alt="logo tajam in color" />
+        <img
+          src="img/logo-fill-big.png?as=webp"
+          srcset="
+            img/logo-fill-big.png?as=webp           235w,
+            img/logo-fill-big.png?as=webp&width=150 150w
+          "
+          sizes="(max-width:520px) 150px, 235px"
+          alt="logo tajam in color"
+        />
       </div>
       <div class="space-y-3 md:w-7/12">
         <h2>OUR STORY</h2>
@@ -148,7 +156,7 @@
     <!-- ________________________________________________________ VIDEO ________________________________________________________ -->
 
     <section
-      class="flex aspect-[1600/550] flex-col items-center justify-center gap-2 bg-[url(img/2movie.png)] bg-cover bg-center bg-no-repeat md:gap-6"
+      class="flex aspect-[1600/550] flex-col items-center justify-center gap-2 bg-[url(img/2movie.png?as=webp&width=530)] bg-cover bg-center bg-no-repeat sm:bg-[url(img/2movie.png?as=webp&width=700)] md:gap-6 md:bg-[url(img/2movie.png?as=webp&width=900)] lg:bg-[url(img/2movie.png?as=webp&width=1280)] xl:bg-[url(img/2movie.png?as=webp&width=1600)]"
     >
       <img src="img/icons/2-play.png" alt="play icon" class="max-w-[15vw]" />
       <p class="text-center font-black text-white">WATCH OUR STORY</p>
@@ -165,7 +173,7 @@
       <hr class="hr-secondary mb-8" />
       <div class="grid gap-6 md:grid-cols-2">
         <div class="grid place-items-center gap-4">
-          <img src="img/icons/desktop.png" alt="desktop monitor icon" />
+          <img src="img/icons/desktop.png?as=webp" alt="desktop monitor icon" />
           <h3 class="font-bold">WEB DESIGN & DEVELOPMENT</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -173,7 +181,7 @@
           </p>
         </div>
         <div class="grid place-items-center gap-4 text-center">
-          <img src="img/icons/3-2brush.png" alt="paint brush icon" />
+          <img src="img/icons/3-2brush.png?as=webp" alt="paint brush icon" />
           <h3 class="font-bold">BRANDING IDENTITY</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -181,7 +189,7 @@
           </p>
         </div>
         <div class="grid place-items-center gap-4 text-center">
-          <img src="img/icons/3-3phone.png" alt="PHONE ICON" />
+          <img src="img/icons/3-3phone.png?as=webp" alt="PHONE ICON" />
           <h3 class="font-bold">MOBILE APP</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -189,7 +197,7 @@
           </p>
         </div>
         <div class="grid place-items-center gap-4 text-center">
-          <img src="img/icons/3-4chart.png" alt="chart icon" />
+          <img src="img/icons/3-4chart.png?as=webp" alt="chart icon" />
           <h3 class="font-bold">SEARCH ENGINE OPTIMIZATION</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -197,7 +205,7 @@
           </p>
         </div>
         <div class="grid place-items-center gap-4 text-center">
-          <img src="img/icons/3-5game.png" alt="gaming console icon" />
+          <img src="img/icons/3-5game.png?as=webp" alt="gaming console icon" />
           <h3 class="font-bold">GAME DEVELOPMENT</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -205,7 +213,7 @@
           </p>
         </div>
         <div class="grid place-items-center gap-4 text-center">
-          <img src="img/icons/3-6heart.png" alt="heart icon" />
+          <img src="img/icons/3-6heart.png?as=webp" alt="heart icon" />
           <h3 class="font-bold">MADE WITH LOVE</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -218,7 +226,7 @@
     <!-- ________________________________________________________ team ________________________________________________________ -->
 
     <section
-      class="grid place-items-center bg-[url(img/4forest.png)] bg-cover bg-center bg-no-repeat px-[5%] py-10 text-center text-white"
+      class="grid place-items-center bg-[url(img/4forest.png?as=webp)] bg-cover bg-center bg-no-repeat px-[5%] py-10 text-center text-white"
     >
       <h2 class="text-white">MEET OUR AMAZING TEAM</h2>
       <p>
@@ -230,7 +238,7 @@
       <div class="flex flex-wrap justify-center gap-6">
         <div class="grid w-56 gap-2 border border-white">
           <img
-            src="img/workers/arrul-lin-sYhUhse5uT8-unsplash.jpg"
+            src="img/workers/arrul-lin-sYhUhse5uT8-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
             class="aspect-square w-full object-cover object-center"
           />
@@ -239,7 +247,7 @@
         </div>
         <div class="grid w-56 gap-2 border border-white">
           <img
-            src="img/workers/ashwini-chaudhary-monty-eq6EJSdpHUQ-unsplash.jpg"
+            src="img/workers/ashwini-chaudhary-monty-eq6EJSdpHUQ-unsplash.jpg?as=webp&width=224"
             alt="Ashwini Chaudhary"
             class="aspect-square w-full object-cover object-center"
           />
@@ -248,7 +256,7 @@
         </div>
         <div class="grid w-56 gap-2 border border-white">
           <img
-            src="img/workers/farhan-shaikh-9TYryqt3wLk-unsplash.jpg"
+            src="img/workers/farhan-shaikh-9TYryqt3wLk-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
             class="aspect-square w-full object-cover object-center"
           />
@@ -257,7 +265,7 @@
         </div>
         <div class="grid w-56 gap-2 border border-white">
           <img
-            src="img/workers/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg"
+            src="img/workers/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg?as=webp&width=224"
             alt="Arrul Lin"
             class="aspect-square w-full object-cover object-center"
           />
@@ -313,7 +321,7 @@
 
     <section
       aria-label="What our clients say about us"
-      class="bg-[url(img/5forest.png)] bg-cover bg-center bg-no-repeat py-20 text-center text-white"
+      class="bg-[url(img/5forest.png?as=webp&width=530&height=700)] bg-cover bg-center bg-no-repeat py-20 text-center text-white sm:bg-[url(img/5forest.png?as=webp&width=700&height=600)] md:bg-[url(img/5forest.png?as=webp&width=900)] lg:bg-[url(img/5forest.png?as=webp&width=1280)] xl:bg-[url(img/5forest.png?as=webp&width=1600)]"
     >
       <div id="carousel-testimonials" class="splide mx-[5%]">
         <div class="splide__track">
@@ -402,7 +410,7 @@
             <li class="splide__slide grid place-items-center">
               <div class="thumb-img-container">
                 <img
-                  src="img/clients/1Smith_John_web2.jpg"
+                  src="img/clients/1Smith_John_web2.jpg?as=webp"
                   alt="John Smith"
                   class="h-full w-full object-cover"
                 />
@@ -411,7 +419,7 @@
             <li class="splide__slide grid place-items-center">
               <div class="thumb-img-container">
                 <img
-                  src="img/clients/2emily.jpg"
+                  src="img/clients/2emily.jpg?as=webp"
                   alt="Emily"
                   class="h-full w-full object-cover"
                 />
@@ -420,7 +428,7 @@
             <li class="splide__slide grid place-items-center">
               <div class="thumb-img-container">
                 <img
-                  src="img/clients/3samantha.jpg"
+                  src="img/clients/3samantha.jpg?as=webp"
                   alt="Samantha"
                   class="h-full w-full object-cover"
                 />
@@ -429,7 +437,7 @@
             <li class="splide__slide grid place-items-center">
               <div class="thumb-img-container">
                 <img
-                  src="img/clients/4michael.jpg"
+                  src="img/clients/4michael.jpg?as=webp"
                   alt="Michael"
                   class="h-full w-full object-cover"
                 />
@@ -438,7 +446,7 @@
             <li class="splide__slide grid place-items-center">
               <div class="thumb-img-container">
                 <img
-                  src="img/clients/5amy.jpg"
+                  src="img/clients/5amy.jpg?as=webp"
                   alt="Amy"
                   class="h-full w-full object-cover"
                 />
@@ -492,16 +500,16 @@
         <div
           class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] items-center gap-x-4 gap-y-8"
         >
-          <img src="img/clients/1zara.png" alt="ZARA" />
-          <img src="img/clients/2mango.png" alt="MANGO" />
-          <img src="img/clients/3barneys.png" alt="Barneys" />
-          <img src="img/clients/4gucci.png" alt="GUCCI" />
-          <img src="img/clients/5calvin.png" alt="Calvin" />
-          <img src="img/clients/6nike.png" alt="Nike" />
-          <img src="img/clients/7converse.png" alt="Converse" />
-          <img src="img/clients/8puma.png" alt="PUMA" />
-          <img src="img/clients/9levis.png" alt="Levis" />
-          <img src="img/clients/10billabong.png" alt="Billbong" />
+          <img src="img/clients/1zara.png?as=webp" alt="ZARA" />
+          <img src="img/clients/2mango.png?as=webp" alt="MANGO" />
+          <img src="img/clients/3barneys.png?as=webp" alt="Barneys" />
+          <img src="img/clients/4gucci.png?as=webp" alt="GUCCI" />
+          <img src="img/clients/5calvin.png?as=webp" alt="Calvin" />
+          <img src="img/clients/6nike.png?as=webp" alt="Nike" />
+          <img src="img/clients/7converse.png?as=webp" alt="Converse" />
+          <img src="img/clients/8puma.png?as=webp" alt="PUMA" />
+          <img src="img/clients/9levis.png?as=webp" alt="Levis" />
+          <img src="img/clients/10billabong.png?as=webp" alt="Billbong" />
         </div>
       </div>
     </section>
@@ -509,12 +517,12 @@
     <!-- ________________________________________________________ footer ________________________________________________________ -->
 
     <footer
-      class="bg-[url(img/6footer.png)] bg-cover bg-center bg-no-repeat px-[5%] py-16 text-sm text-white"
+      class="bg-[url(img/6footer.png?as=webp&width=530&height=488)] bg-cover bg-center bg-no-repeat px-[5%] py-16 text-sm text-white sm:bg-[url(img/6footer.png?as=webp&width=700&height=488)] md:bg-[url(img/6footer.png?as=webp&width=900&height=356)] lg:bg-[url(img/6footer.png?as=webp&width=1280&height=382)] xl:bg-[url(img/6footer.png?as=webp&width=1600)]"
     >
       <div class="flex flex-wrap justify-between gap-4">
         <div>
           <div class="flex items-center gap-4">
-            <img src="img/logo.png" alt="logo tajam" />
+            <img src="img/logo.png?as=webp" alt="logo tajam" />
             <p class="text-[1.5em] font-thin text-primary">tajam</p>
           </div>
           <p>

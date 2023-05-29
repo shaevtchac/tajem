@@ -2,6 +2,7 @@ import { Splide } from '@splidejs/splide';
 
 const splide = new Splide('.splide', {
   arrows: false,
+  lazyLoad:true,
 });
 splide.mount();
 
