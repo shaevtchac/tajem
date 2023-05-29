@@ -15,6 +15,12 @@ const splideTestimonials = new Splide('#carousel-testimonials', {
 const splideTestimonialsThumbs = new Splide('#carousel-testimonials-thumbs', {
   fixedWidth: 50,
   fixedHeight: 50,
+  breakpoints: {
+    359: {
+      fixedWidth: 35,
+      fixedHeight: 35,
+    },
+  },
   rewind: true,
   pagination: false,
   isNavigation: true,
@@ -27,6 +33,33 @@ splideTestimonials.sync(splideTestimonialsThumbs);
 splideTestimonials.mount();
 splideTestimonialsThumbs.mount();
 splideTestimonialsThumbs.go(2);
+
+// ______________________________________________________________ works modal carousel ______________________________________________________________
+
+const images = document.querySelectorAll('.works-image');
+const worksCarouselList = document.getElementById('works-carousel-list');
+const worksModal = document.getElementById('works-modal');
+let worksCarousel;
+images.forEach((image) => {
+  const li = document.createElement('li');
+  li.classList = 'splide__slide';
+  const newImage = image.cloneNode(true);
+  li.append(newImage);
+  worksCarouselList.append(li);
+  image.addEventListener('click', function () {
+    if (window.innerWidth < 515) return;
+    worksCarousel = new Splide('#works-modal-carousel');
+    worksModal.showModal();
+    worksCarousel.mount();
+    worksCarousel.go(Array.from(images).indexOf(this));
+  });
+});
+document.getElementById('works-modal-close').addEventListener('click', () => {
+  worksModal.close();
+});
+
+worksModal.addEventListener('close', () => worksCarousel.destroy());
+
 // _______________________________________________________________ menu _______________________________________________________________
 
 // _________ button

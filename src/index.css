@@ -29,6 +29,9 @@
   .btn-primary {
     @apply border border-primary bg-transparent p-3 font-black uppercase text-primary;
   }
+  .btn-secondary {
+    @apply border-none bg-slate-300 px-3  py-1  text-tlight;
+  }
 
   .testimonial-body {
     @apply relative mx-auto mt-10 font-playfair;
@@ -50,10 +53,25 @@
 } */
 
 /* __________________________________________________________________________ menu ___________________________________________________________ */
+.logo {
+  @apply flex items-center gap-4;
+}
 nav.is-open {
   max-height: 500px !important;
   transition: max-height 0.25s ease-in;
   @apply bg-menubg;
+}
+
+nav.is-open .logo {
+  @apply hidden;
+}
+nav.is-open ul {
+  margin-right: 20px !important;
+}
+
+nav.is-open li {
+  font-size: 1.5em !important;
+  font-weight: 300 !important;
 }
 
 nav.reduced {
@@ -64,9 +82,6 @@ nav.reduced {
 }
 nav.reduced .hamburger {
   top: 0px;
-}
-nav.reduced li {
-  line-height: 50px;
 }
 
 .hamburger {
@@ -86,7 +101,7 @@ nav.reduced li {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  @apply bg-black;
+  @apply bg-white;
 }
 
 .hamburger-box {
@@ -100,7 +115,7 @@ nav.reduced li {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  @apply absolute h-1 w-10 rounded bg-black 
+  @apply absolute h-1 w-10 rounded bg-white 
   transition-transform duration-150;
   transition-timing-function: ease;
 }
@@ -158,6 +173,10 @@ nav.reduced li {
 
 .thumb-img-container {
   @apply aspect-square w-3/4 overflow-hidden rounded-full transition-all;
+}
+
+.works-image {
+  @apply grid aspect-video place-items-center rounded-sm border border-black bg-slate-400 text-8xl font-black text-slate-500;
 }
 
 /* _____________________________________________________ animations ________________________________________________ */

@@ -4,6 +4,7 @@ module.exports = {
   content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
     screens: {
+      xs: '360px',
       sm: '530px',
       md: '700px',
       lg: '900px',
@@ -16,7 +17,7 @@ module.exports = {
         tdark: '#413d4b',
         tlight: '#333333',
         whitetr: '#ffffff88',
-        menubg: '#00000088',
+        menubg: '#000000bb',
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],

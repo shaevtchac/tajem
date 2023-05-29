@@ -19,12 +19,12 @@
     class="mx-auto max-w-[1600px] bg-white font-roboto font-[300] text-tlight"
   >
     <nav
-      class="fixed z-30 flex max-h-[95px] min-h-[95px] w-full justify-center [transition:max-height,min-height_150ms_ease-out]"
+      class="fixed z-30 flex max-h-[95px] min-h-[95px] w-full justify-center [transition:all_250ms_ease-out]"
     >
       <div
         class="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-2 sm:px-7"
       >
-        <div class="flex items-center gap-4">
+        <div class="logo">
           <img src="img/logo.png" alt="logo tajam" />
           <p class="text-[1.5em] font-thin text-primary">tajam</p>
         </div>
@@ -42,7 +42,7 @@
         </button>
         <ul
           id="menu-items"
-          class="my-4 mr-20 hidden flex-1 gap-4 text-center font-black text-white md:my-0 md:mr-0 md:flex md:h-full md:flex-none md:items-center"
+          class="my-4 mr-20 hidden flex-1 gap-2 text-center text-[0.9em] font-black text-white md:my-0 md:mr-0 md:flex md:h-full md:flex-none md:items-center lg:gap-4 lg:[font-size:inherit]"
         >
           <li class="hover:text-primary md:h-full md:leading-[95px]">
             <a href="#top">HOME</a>
@@ -121,11 +121,13 @@
 
     <!-- ________________________________________________________ story ________________________________________________________ -->
 
-    <section class="flex max-w-7xl px-[5%] py-20">
-      <div class="grid w-5/12 place-items-center">
+    <section class="max-w-7xl gap-4 px-[5%] py-20 md:flex">
+      <div
+        class="float-left mr-4 grid w-1/3 place-items-center md:float-none md:mr-0 md:w-5/12"
+      >
         <img src="img/logo-fill-big.png" alt="logo tajam in color" />
       </div>
-      <div class="w-7/12 space-y-3">
+      <div class="space-y-3 md:w-7/12">
         <h2>OUR STORY</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis
@@ -161,7 +163,7 @@
         dolorem ullam dolor debitis!
       </p>
       <hr class="hr-secondary mb-8" />
-      <div class="grid gap-6">
+      <div class="grid gap-6 md:grid-cols-2">
         <div class="grid place-items-center gap-4">
           <img src="img/icons/desktop.png" alt="desktop monitor icon" />
           <h3 class="font-bold">WEB DESIGN & DEVELOPMENT</h3>
@@ -226,9 +228,7 @@
       <hr class="hr-secondary clear-left mb-8 border-white" />
       <!-- people container -->
       <div class="flex flex-wrap justify-center gap-6">
-        <div
-          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
-        >
+        <div class="grid w-56 gap-2 border border-white">
           <img
             src="img/workers/arrul-lin-sYhUhse5uT8-unsplash.jpg"
             alt="Arrul Lin"
@@ -237,9 +237,7 @@
           <p class="mt-2 font-[700]">SEMF UCUK</p>
           <p>CEO & FOUNDER</p>
         </div>
-        <div
-          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
-        >
+        <div class="grid w-56 gap-2 border border-white">
           <img
             src="img/workers/ashwini-chaudhary-monty-eq6EJSdpHUQ-unsplash.jpg"
             alt="Ashwini Chaudhary"
@@ -248,9 +246,7 @@
           <p class="mt-2 font-[700]">DIK ADALIN</p>
           <p>ENGINEERING</p>
         </div>
-        <div
-          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
-        >
+        <div class="grid w-56 gap-2 border border-white">
           <img
             src="img/workers/farhan-shaikh-9TYryqt3wLk-unsplash.jpg"
             alt="Arrul Lin"
@@ -259,9 +255,7 @@
           <p class="mt-2 font-[700]">JENG KOL</p>
           <p>DESIGNER</p>
         </div>
-        <div
-          class="grid min-w-[200px] max-w-[250px] flex-1 gap-2 border border-white"
-        >
+        <div class="grid w-56 gap-2 border border-white">
           <img
             src="img/workers/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg"
             alt="Arrul Lin"
@@ -284,29 +278,44 @@
       </div>
       <!-- image container -->
       <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
-        <div class="h-48 rounded-sm border border-black bg-slate-400"></div>
+        <div class="works-image">1</div>
+        <div class="works-image">2</div>
+        <div class="works-image">3</div>
+        <div class="works-image">4</div>
+        <div class="works-image">5</div>
+        <div class="works-image">6</div>
+        <div class="works-image">7</div>
+        <div class="works-image">8</div>
+        <div class="works-image">9</div>
+        <div class="works-image">10</div>
+        <div class="works-image">11</div>
+        <div class="works-image">12</div>
       </div>
       <button class="btn-primary mx-auto my-6 block">LOAD MORE</button>
+      <dialog id="works-modal" class="w-full md:w-3/4 lg:w-1/2">
+        <div
+          id="works-modal-carousel"
+          aria-label="Portfolio Images enlarged"
+          class="splide"
+        >
+          <div class="splide__track">
+            <ul class="splide__list" id="works-carousel-list"></ul>
+            <li class="splide__slide"></li>
+          </div>
+        </div>
+        <button id="works-modal-close" class="btn-secondary my-4 ml-auto block">
+          Close
+        </button>
+      </dialog>
     </section>
 
     <!-- ________________________________________________________ testimonials ________________________________________________________ -->
 
     <section
       aria-label="What our clients say about us"
-      class="bg-[url(img/5forest.png)] bg-cover bg-center bg-no-repeat px-[5%] py-20 text-center text-white"
+      class="bg-[url(img/5forest.png)] bg-cover bg-center bg-no-repeat py-20 text-center text-white"
     >
-      <div id="carousel-testimonials" class="splide">
+      <div id="carousel-testimonials" class="splide mx-[5%]">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -386,7 +395,7 @@
       <div
         id="carousel-testimonials-thumbs"
         aria-label="thumbnails for testimonials carousel"
-        class="splide mx-auto w-[330px]"
+        class="splide mx-auto w-[270px] xs:w-[330px]"
       >
         <div class="splide__track">
           <ul class="splide__list">
@@ -502,7 +511,7 @@
     <footer
       class="bg-[url(img/6footer.png)] bg-cover bg-center bg-no-repeat px-[5%] py-16 text-sm text-white"
     >
-      <div class="flex justify-between">
+      <div class="flex flex-wrap justify-between gap-4">
         <div>
           <div class="flex items-center gap-4">
             <img src="img/logo.png" alt="logo tajam" />
@@ -546,14 +555,14 @@
         </div>
         <div>
           <p class="mb-2 font-bold">STAY IN TOUCH</p>
-          <div class="flex gap-4">
+          <div class="flex flex-wrap gap-4">
             <input
               type="text"
               name="subscribe"
               id="subscribe"
-              size="30"
+              size="15"
               placeholder="Subscribe our newsletter"
-              class="border border-tlight p-2"
+              class="flex-1 border border-tlight p-2"
             />
             <button class="bg-whitetr px-4">
               <svg
