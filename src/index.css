@@ -10,9 +10,11 @@
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
   }
+
   p {
     @apply max-w-prose;
   }
+
   h2 {
     @apply font-playfair text-[1.2em] font-bold leading-tight text-tdark;
   }
@@ -27,8 +29,25 @@
   }
 
   .btn-primary {
-    @apply border border-primary bg-transparent p-3 font-black uppercase text-primary;
+    @apply relative border border-primary bg-transparent  font-black uppercase text-primary;
+    padding: 12px;
+    transition: padding 300ms ease-in;
   }
+  .btn-primary::after {
+    @apply absolute top-1.5;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 40 40' fill='%2300e0d0'%3E%3Cpath d='M 10.24901,1.4752837 C 9.9149159,1.139629 9.9133547,0.59243365 10.245887,0.25443712 10.57842,-0.0835594 11.120151,-0.08512059 11.454244,0.25131475 L 30.588126,19.388319 c 0.334094,0.335655 0.335655,0.88285 0.0031,1.220847 L 11.454244,39.749292 a 0.84881622,0.84881622 0 0 1 -1.208357,-0.0039 c -0.3325323,-0.337996 -0.3309711,-0.884411 0.0031,-1.220066 L 28.770907,20.000304 Z' %3E%3C/path%3E%3C/svg%3E");
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+  }
+  .btn-primary:hover::after,
+  .btn-primary:focus::after {
+    opacity: 1;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus {
+    padding-right: 40px;
+  }
+
   .btn-secondary {
     @apply border-none bg-slate-300 px-3  py-1  text-tlight;
   }
